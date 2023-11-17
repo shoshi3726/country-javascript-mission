@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 8 -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script defer type="module" src="js/appCountry.js"></script>
+  <!-- <script src="js/classCountry.js"></script> -->
+  <link rel="stylesheet" href="css/design.css">
+
+</head>
+<body>
+    <header class="container-fluid p-3" >
+      <nav class="container">
+        <div  class="row justify-content-between" data-aos="flip-up" data-aos-duration="1000">
+          <div class="col-auto d-flex">
+
+            <ul class="nav">
+                <li class="pe-3" id="id_Israel">
+                  <a class="text-decoration-none fw-bolder" href="#">Israel</a>
+                </li>
+                <li class="pe-3" id="id_France">
+                    <a class="text-decoration-none fw-bolder" href="#">France</a>
+                </li>
+                <li class="pe-3" id="id_USA">
+                  <a class="text-decoration-none fw-bolder" href="#">USA</a>
+                </li>
+                <li class="pe-3" id="id_UK">
+                  <a class="text-decoration-none fw-bolder" href="#">United Kingdom</a>
+                </li>
+                <li class="pe-3" id="id_Thailand"  value="Thailand">
+                  <a class="text-decoration-none fw-bolder" href="#">Thailand</a>
+                </li>
+              </ul>
+        </div>
+          <div class="col-md-4 d-flex">
+            <input placeholder="search for country..." type="text" id="id_input" class="form-control">
+            <button id="search_btn" class="btn btn-dark">Search</button>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+   
+    <main class="container-fluid py-4" style="min-height: 800px ;background-image: url(images/pexels-pixabay-41949.jpg); background-size: cover;">
+      <div class="container">
+        <div id="id_loading" class="loading text-center" >
+          <img src="images/load-1110_128.gif" alt="loading" > 
+          <p class="display-3">Loading...</p>
+        </div>
+
+        <div id="id_row" class="row justify-content-around">
+        </div>
+
+        
+      </div>  
+    </main>
+
+    <footer style="background-color: rgb(10, 10, 68);">
+    <div class="p-2">
+
+        <h2 class="text-center text-white fw-bolder">Shoshi Green 2023 ©</h2>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  </body>
+  
+</html>
